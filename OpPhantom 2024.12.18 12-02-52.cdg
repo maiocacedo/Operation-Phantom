@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="OpPhantom">
+  <ClassDiagramComponents>
+    <Class name="CobradeAluminio" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="1242.0" yPosition="416.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="desc" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Janela" name="j"/>
+          <Argument type="KeyHandler" name="keyH"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="DuroDuro" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="1438.0" yPosition="389.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="desc" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Janela" name="j"/>
+          <Argument type="KeyHandler" name="keyH"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Entidade" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="673.0" yPosition="31.0">
+      <Fields>
+        <Field name="worldX" type="int" visibility="public"/>
+        <Field name="speed" type="int" visibility="public"/>
+        <Field name="up1" type="BufferedImage" visibility="public"/>
+        <Field name="direction" type="String" visibility="public"/>
+        <Field name="spriteCounter" type="int" visibility="public"/>
+        <Field name="spriteNum" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Inimigo" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="448.0" yPosition="88.0">
+      <Fields>
+        <Field name="saude" type="int" visibility="private"/>
+        <Field name="dano" type="int" visibility="private"/>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="InimigoCorpoCorpo" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="108.0" yPosition="190.0">
+      <Fields>
+        <Field name="danoArma" type="int" visibility="private"/>
+        <Field name="arma" type="Arma" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="InimigoDistancia" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="108.0" yPosition="33.0">
+      <Fields>
+        <Field name="danoArma" type="int" visibility="private"/>
+        <Field name="arma" type="Arma" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Player" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="996.0" yPosition="53.0">
+      <Fields>
+        <Field name="j" type="Janela" visibility="package"/>
+        <Field name="keyH" type="KeyHandler" visibility="package"/>
+        <Field name="screenX" type="int" visibility="public" isFinal="true"/>
+        <Field name="screenY" type="int" visibility="public" isFinal="true"/>
+        <Field name="saude" type="int" visibility="private"/>
+        <Field name="dano" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Janela" name="j"/>
+          <Argument type="KeyHandler" name="keyH"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Tempestade" package="maiocacedo.opphantom.Entidades" visibility="public" xPosition="1458.0" yPosition="171.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="desc" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Janela" name="j"/>
+          <Argument type="KeyHandler" name="keyH"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Arma" package="maiocacedo.opphantom.Itens" visibility="public" xPosition="301.0" yPosition="489.0">
+      <Fields>
+        <Field name="dano" type="int" visibility="private"/>
+        <Field name="alcance" type="int" visibility="private"/>
+        <Field name="status" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Consumivel" package="maiocacedo.opphantom.Itens" visibility="public" xPosition="492.0" yPosition="529.0">
+      <Fields>
+        <Field name="status" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Ferramenta" package="maiocacedo.opphantom.Itens" visibility="public" xPosition="153.0" yPosition="349.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Item" package="maiocacedo.opphantom.Itens" visibility="public" xPosition="448.0" yPosition="295.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="desc" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Janela" package="maiocacedo.opphantom.Principal" visibility="public" xPosition="996.0" yPosition="311.0">
+      <Fields>
+        <Field name="originalTileSize" type="int" visibility="package" isFinal="true"/>
+        <Field name="scale" type="int" visibility="package" isFinal="true"/>
+        <Field name="tileSize" type="int" visibility="package" isFinal="true"/>
+        <Field name="maxScreenRow" type="int" visibility="package" isFinal="true"/>
+        <Field name="maxScreenCol" type="int" visibility="package" isFinal="true"/>
+        <Field name="screenWidth" type="int" visibility="public" isFinal="true"/>
+        <Field name="screenHeight" type="int" visibility="public" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="KeyHandler" package="maiocacedo.opphantom.Principal" visibility="public" xPosition="1458.0" yPosition="23.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="keyTyped" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="keyPressed" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="keyReleased" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TileManager" package="maiocacedo.opphantom.Principal" visibility="public" xPosition="726.0" yPosition="330.0">
+      <Fields>
+        <Field name="tile" type="Tiles" visibility="package"/>
+        <Field name="j" type="Janela" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Janela" name="j"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTileImage" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tiles" package="maiocacedo.opphantom.Principal" visibility="public" xPosition="726.0" yPosition="529.0">
+      <Fields>
+        <Field name="image" type="BufferedImage" visibility="public"/>
+        <Field name="colision" type="boolean" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.Tempestade" target="maiocacedo.opphantom.Entidades.Player"/>
+    <HasRelation name="usa" source="maiocacedo.opphantom.Entidades.Player" target="maiocacedo.opphantom.Itens.Item" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Itens.Arma" target="maiocacedo.opphantom.Itens.Item"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.InimigoCorpoCorpo" target="maiocacedo.opphantom.Entidades.Inimigo"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.CobradeAluminio" target="maiocacedo.opphantom.Entidades.Player"/>
+    <HasRelation name="j" source="maiocacedo.opphantom.Entidades.Player" target="maiocacedo.opphantom.Principal.Janela" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.DuroDuro" target="maiocacedo.opphantom.Entidades.Player"/>
+    <HasRelation name="j" source="maiocacedo.opphantom.Principal.TileManager" target="maiocacedo.opphantom.Principal.Janela" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.Player" target="maiocacedo.opphantom.Entidades.Entidade"/>
+    <HasRelation name="usa" source="maiocacedo.opphantom.Entidades.Inimigo" target="maiocacedo.opphantom.Itens.Item" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="tile" source="maiocacedo.opphantom.Principal.TileManager" target="maiocacedo.opphantom.Principal.Tiles" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="keyH" source="maiocacedo.opphantom.Entidades.Player" target="maiocacedo.opphantom.Principal.KeyHandler" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Itens.Consumivel" target="maiocacedo.opphantom.Itens.Item"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.InimigoDistancia" target="maiocacedo.opphantom.Entidades.Inimigo"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Entidades.Inimigo" target="maiocacedo.opphantom.Entidades.Entidade"/>
+    <IsRelation name="is" source="maiocacedo.opphantom.Itens.Ferramenta" target="maiocacedo.opphantom.Itens.Item"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
